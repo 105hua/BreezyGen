@@ -1,0 +1,3 @@
+BreezyGen is a tModLoader Mod for Terraria that aims to make various parts of the World
+Generation Process a little more generous. It does this through several aspects such as
+increasing the size of ore veins, in addition to making Chest Loot more lenient.
