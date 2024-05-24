@@ -1,5 +1,4 @@
-﻿using System;
-using Terraria;
+﻿using Terraria;
 using Terraria.ModLoader;
 using Terraria.WorldBuilding;
 
@@ -12,7 +11,7 @@ public class IronGen
     {
         ModContent.GetInstance<BreezyGen>().Logger.Info("PERFORMING IRON GENERATION");
 
-        ModContent.GetInstance<BreezyGen>().Logger.Info("SURFACE IRON (1/3)");
+        ModContent.GetInstance<BreezyGen>().Logger.Info("IRON #1");
         for(int i = 0; i < (int)(double)(Main.maxTilesX * Main.maxTilesY) * 3E-05; i++){
             // Drunk World Check
             if(WorldGen.drunkWorldGen){
@@ -30,7 +29,7 @@ public class IronGen
             WorldGen.TileRunner(x, y, strength, steps, GenVars.iron);
         }
 
-        ModContent.GetInstance<BreezyGen>().Logger.Info("UNDERGROUND IRON (2/3)");
+        ModContent.GetInstance<BreezyGen>().Logger.Info("IRON #2");
         for(int i = 0; i < (int)(double)(Main.maxTilesX * Main.maxTilesY * 8E-05); i++){
             // Drunk World Check
             if(WorldGen.drunkWorldGen){
@@ -48,7 +47,7 @@ public class IronGen
             WorldGen.TileRunner(x, y, strength, steps, GenVars.iron);
         }
 
-        ModContent.GetInstance<BreezyGen>().Logger.Info("CAVERN IRON (3/3)");
+        ModContent.GetInstance<BreezyGen>().Logger.Info("IRON #3");
         for(int i = 0; i < (int)(double)(Main.maxTilesX * Main.maxTilesY * 0.0002); i++){
             // Drunk World Check
             if(WorldGen.drunkWorldGen){

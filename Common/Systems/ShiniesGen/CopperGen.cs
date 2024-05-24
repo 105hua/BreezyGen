@@ -1,5 +1,4 @@
-﻿using System;
-using Terraria;
+﻿using Terraria;
 using Terraria.ModLoader;
 using Terraria.WorldBuilding;
 
@@ -11,7 +10,7 @@ public class CopperGen
     {
         ModContent.GetInstance<BreezyGen>().Logger.Info("PERFORMING COPPER GENERATION");
 
-        ModContent.GetInstance<BreezyGen>().Logger.Info("SURFACE COPPER (1/3)");
+        ModContent.GetInstance<BreezyGen>().Logger.Info("COPPER #1");
         for(int i = 0; i < (int)(double)(Main.maxTilesX * Main.maxTilesY) * 6E-05; i++){
             // Drunk World Check
             if(WorldGen.drunkWorldGen){
@@ -29,7 +28,7 @@ public class CopperGen
             WorldGen.TileRunner(x, y, strength, steps, GenVars.copper);
         }
         
-        ModContent.GetInstance<BreezyGen>().Logger.Info("UNDERGROUND COPPER (2/3)");
+        ModContent.GetInstance<BreezyGen>().Logger.Info("COPPER #2");
         for(int i = 0; i< (int)(double)(Main.maxTilesX * Main.maxTilesY * 8E-05); i++){
             // Drunk World Check
             if(WorldGen.drunkWorldGen){
@@ -47,7 +46,7 @@ public class CopperGen
             WorldGen.TileRunner(x, y, strength, steps, GenVars.copper);
         }
 
-        ModContent.GetInstance<BreezyGen>().Logger.Info("CAVERN COPPER (3/3)");
+        ModContent.GetInstance<BreezyGen>().Logger.Info("COPPER #3");
         for(int i = 0; i < (int)(double)(Main.maxTilesX * Main.maxTilesY * 0.0002); i++){
             // Drunk World Check
             if(WorldGen.drunkWorldGen){
