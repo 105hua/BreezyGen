@@ -20,6 +20,7 @@ public class PreHardmodeWorldGenHook : ModSystem
         CopperGen.GenerateCopper(); // Generates copper ore.
         IronGen.GenerateIron(); // Generates iron ore.
         SilverGen.GenerateSilver(); // Generates silver ore.
+        GoldGen.GenerateGold(); // Generates gold ore.
         ModContent.GetInstance<BreezyGen>().Logger.Info("END SHINIES GENERATION");
     }
 }
